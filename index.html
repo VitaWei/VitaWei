@@ -61,42 +61,6 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-extend-tool" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/06/25/extend-tool/" class="article-date">
-  <time datetime="2017-06-25T11:03:39.000Z" itemprop="datePublished">2017-06-25</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/06/25/extend-tool/">extend tool</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/06/25/extend-tool/" data-id="cj4clxgge000230r3d8rikah3" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
     <article id="post-AjaxXHR-js" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2017/06/25/AjaxXHR-js/" class="article-date">
@@ -282,6 +246,95 @@
 
 
   
+    <article id="post-extend-tool" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2014/07/13/extend-tool/" class="article-date">
+  <time datetime="2014-07-13T11:03:39.000Z" itemprop="datePublished">2014-07-13</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2014/07/13/extend-tool/">extend tool</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="关于extend的使用方法"><a href="#关于extend的使用方法" class="headerlink" title="关于extend的使用方法"></a>关于extend的使用方法</h2><p>```bash</p>
+<pre><code>    /*jQuery的extend
+     * 如果传入多个参数，那么把后面的对象混入给第一个成员
+     * 如果传入1个参数，谁调用就是给谁copy
+     * 
+     */
+    var a = {age :18};
+    var b = {name:&apos;四哥&apos;};
+    var c = {hobby:&apos;逛吃&apos;};
+    $.extend(a,b,c);//就是把b,c都混入给a 相当于copy
+    console.log(a);//Object {age: 18, name: &quot;sige&quot;, hobby: &quot;chi&quot;}
+    //给$添加静态成员
+    $.extend(a)//把a混入$
+    console.log($);
+    $.fn.extend({
+        con:function(msg){
+            console.log(msg)
+        }
+    })
+    $().con(&apos;打印试试&apos;);
+
+    function extend(o1,o2){
+        //混入只混入自己不混入继承过来的，这边做一个判断，判断是不是自己的hasOwnProperty
+        for(var k in o2){
+            if(o2.hasOwnProperty(k)){
+                   o1[k] = o2[k];
+            }
+
+        }
+    }
+    //函数式子
+    function extend1(obj){
+        for(var key in obj){
+            if(obj.hasOwnProperty(key)){
+                this[key] = obj[key];
+            }
+        }
+    }
+    //比如
+    var o = {
+        a:1,
+        ext:extend1
+    }
+    o.ext({
+        val:&apos;我是混入的值&apos;
+    })
+    console.log(o);
+
+//   tool.fenye();
+
+//   console.log(tool);
+
+  Route.chi()
+</code></pre>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2014/07/13/extend-tool/" data-id="cj4clxgge000230r3d8rikah3" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
 
 </section>
         
@@ -299,7 +352,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/06/">June 2017</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/06/">June 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/07/">July 2014</a></li></ul>
     </div>
   </div>
 
@@ -310,10 +363,6 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
-        
-          <li>
-            <a href="/2017/06/25/extend-tool/">extend tool</a>
-          </li>
         
           <li>
             <a href="/2017/06/25/AjaxXHR-js/">again test</a>
@@ -329,6 +378,10 @@
         
           <li>
             <a href="/2017/06/25/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2014/07/13/extend-tool/">extend tool</a>
           </li>
         
       </ul>
