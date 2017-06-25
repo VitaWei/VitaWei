@@ -3,18 +3,15 @@
 <head>
   <meta charset="utf-8">
   
-  <title>extend tool | Hexo</title>
+  <title>json tool | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="关于extend的使用方法```bash     /*jQuery的extend      * 如果传入多个参数，那么把后面的对象混入给第一个成员      * 如果传入1个参数，谁调用就是给谁copy      *       */     var a = {age :18};     var b = {name:&amp;apos;四哥&amp;apos;};     var c = {hobby:&amp;apos">
-<meta property="og:type" content="article">
-<meta property="og:title" content="extend tool">
-<meta property="og:url" content="http://yoursite.com/2014/07/13/extend-tool/index.html">
+  <meta property="og:type" content="article">
+<meta property="og:title" content="json tool">
+<meta property="og:url" content="http://yoursite.com/2017/06/25/json-tool/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="关于extend的使用方法```bash     /*jQuery的extend      * 如果传入多个参数，那么把后面的对象混入给第一个成员      * 如果传入1个参数，谁调用就是给谁copy      *       */     var a = {age :18};     var b = {name:&amp;apos;四哥&amp;apos;};     var c = {hobby:&amp;apos">
-<meta property="og:updated_time" content="2017-06-25T11:10:07.623Z">
+<meta property="og:updated_time" content="2017-06-25T11:36:08.197Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="extend tool">
-<meta name="twitter:description" content="关于extend的使用方法```bash     /*jQuery的extend      * 如果传入多个参数，那么把后面的对象混入给第一个成员      * 如果传入1个参数，谁调用就是给谁copy      *       */     var a = {age :18};     var b = {name:&amp;apos;四哥&amp;apos;};     var c = {hobby:&amp;apos">
+<meta name="twitter:title" content="json tool">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -63,10 +60,10 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-extend-tool" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-json-tool" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2014/07/13/extend-tool/" class="article-date">
-  <time datetime="2014-07-13T11:03:39.000Z" itemprop="datePublished">2014-07-13</time>
+    <a href="/2017/06/25/json-tool/" class="article-date">
+  <time datetime="2017-06-25T11:36:08.000Z" itemprop="datePublished">2017-06-25</time>
 </a>
     
   </div>
@@ -77,7 +74,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      extend tool
+      json tool
     </h1>
   
 
@@ -85,64 +82,11 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="关于extend的使用方法"><a href="#关于extend的使用方法" class="headerlink" title="关于extend的使用方法"></a>关于extend的使用方法</h2><p>```bash</p>
-<pre><code>    /*jQuery的extend
-     * 如果传入多个参数，那么把后面的对象混入给第一个成员
-     * 如果传入1个参数，谁调用就是给谁copy
-     * 
-     */
-    var a = {age :18};
-    var b = {name:&apos;四哥&apos;};
-    var c = {hobby:&apos;逛吃&apos;};
-    $.extend(a,b,c);//就是把b,c都混入给a 相当于copy
-    console.log(a);//Object {age: 18, name: &quot;sige&quot;, hobby: &quot;chi&quot;}
-    //给$添加静态成员
-    $.extend(a)//把a混入$
-    console.log($);
-    $.fn.extend({
-        con:function(msg){
-            console.log(msg)
-        }
-    })
-    $().con(&apos;打印试试&apos;);
-
-    function extend(o1,o2){
-        //混入只混入自己不混入继承过来的，这边做一个判断，判断是不是自己的hasOwnProperty
-        for(var k in o2){
-            if(o2.hasOwnProperty(k)){
-                   o1[k] = o2[k];
-            }
-
-        }
-    }
-    //函数式子
-    function extend1(obj){
-        for(var key in obj){
-            if(obj.hasOwnProperty(key)){
-                this[key] = obj[key];
-            }
-        }
-    }
-    //比如
-    var o = {
-        a:1,
-        ext:extend1
-    }
-    o.ext({
-        val:&apos;我是混入的值&apos;
-    })
-    console.log(o);
-
-//   tool.fenye();
-
-//   console.log(tool);
-
-  Route.chi()
-</code></pre>
+        
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2014/07/13/extend-tool/" data-id="cj4cn5ua30001gsr3287sze4m" class="article-share-link">Delen</a>
+      <a data-url="http://yoursite.com/2017/06/25/json-tool/" data-id="cj4cn5ua30003gsr38k7tv6w5" class="article-share-link">Delen</a>
       
       
     </footer>
@@ -151,15 +95,11 @@
     
 <nav id="article-nav">
   
-    <a href="/2017/06/25/hello-world/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Nieuwer</strong>
-      <div class="article-nav-title">
-        
-          Hello World
-        
-      </div>
-    </a>
   
+    <a href="/2017/06/25/again-test/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Ouder</strong>
+      <div class="article-nav-title">again test</div>
+    </a>
   
 </nav>
 
