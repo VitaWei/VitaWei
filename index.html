@@ -48,9 +48,9 @@
       </nav>
       <nav id="sub-nav">
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Flux RSS"></a>
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Rechercher"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
@@ -61,10 +61,10 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-AjaxXHR-js" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-extend-tool" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2017/06/25/AjaxXHR-js/" class="article-date">
-  <time datetime="2017-06-25T10:39:00.000Z" itemprop="datePublished">2017-06-25</time>
+    <a href="/2017/06/25/extend-tool/" class="article-date">
+  <time datetime="2017-06-25T11:03:39.000Z" itemprop="datePublished">2017-06-25</time>
 </a>
     
   </div>
@@ -75,7 +75,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/06/25/AjaxXHR-js/">AjaxXHR js</a>
+      <a class="article-title" href="/2017/06/25/extend-tool/">extend tool</a>
     </h1>
   
 
@@ -87,7 +87,44 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/06/25/AjaxXHR-js/" data-id="cj4cl2yus0000ewr3txrhw0ir" class="article-share-link">Partager</a>
+      <a data-url="http://yoursite.com/2017/06/25/extend-tool/" data-id="cj4clxgge000230r3d8rikah3" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-AjaxXHR-js" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/06/25/AjaxXHR-js/" class="article-date">
+  <time datetime="2017-06-25T09:08:57.000Z" itemprop="datePublished">2017-06-25</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/06/25/AjaxXHR-js/">again test</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="just-test"><a href="#just-test" class="headerlink" title="just test"></a>just test</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">(<span class="function"><span class="title">function</span></span>()&#123;</div><div class="line">    var categoryid = Number(window.location.search.slice(1).split(<span class="string">"="</span>)[1]);</div><div class="line">    var page = 1;//初始页面</div><div class="line">    var toggle = 0;//变换页面</div><div class="line"></div><div class="line">    //请求渲染初始页面</div><div class="line">    // $.ajax(&#123;</div><div class="line">    //     url:<span class="string">"http://127.0.0.1:9090/api/getmoneyctrl"</span>,</div><div class="line">    //     data:&#123;</div><div class="line">    //         pageid:page</div><div class="line">    //     &#125;,</div><div class="line">    //     success:<span class="keyword">function</span>(data)&#123;       </div><div class="line">    //         var str = template(<span class="string">"tpl"</span>,data);</div><div class="line">    //         var page = data.pagesize;</div><div class="line">    //         $(<span class="string">".money-ctrl&gt;ul"</span>).html(str);     </div><div class="line">    //     &#125;,</div><div class="line">    //     error:<span class="function"><span class="title">function</span></span>()&#123;</div><div class="line">    //         alert(<span class="string">"出错了!"</span>);</div><div class="line">    //     &#125;</div><div class="line">    // &#125;);</div><div class="line">    <span class="keyword">function</span> ajax(page)&#123;</div><div class="line">        $.ajax(&#123;</div><div class="line">            url:<span class="string">"http://127.0.0.1:9090/api/getmoneyctrl"</span>,</div><div class="line">            data:&#123;</div><div class="line">                pageid:page,</div><div class="line">                categoryid:categoryid</div><div class="line">            &#125;,</div><div class="line">            success:<span class="keyword">function</span>(data)&#123;</div><div class="line">                var str = template(<span class="string">"tpl"</span>,data);</div><div class="line">                $(<span class="string">"#main"</span>).html(str);</div><div class="line">                totalPage=parseInt(data.totalCount/data.pagesize);</div><div class="line">                var htmlStr=<span class="string">""</span>;</div><div class="line">                <span class="keyword">for</span>(var i=1;i&lt;=totalPage;i++)&#123;</div><div class="line">                    htmlStr+=<span class="string">'&lt;option&gt;'</span>+i+<span class="string">"/"</span>+totalPage+<span class="string">'&lt;/option&gt;'</span>;</div><div class="line"></div><div class="line">                &#125;</div><div class="line">                $(<span class="string">"#selectPage"</span>).html(htmlStr);</div><div class="line">                $(<span class="string">"option"</span>).eq(page).prop(<span class="string">"selected"</span>,<span class="literal">true</span>);</div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line">               </div><div class="line">                var select = document.getElementById(<span class="string">"selectPage"</span>);</div><div class="line">                 var optionArr = select.querySelectorAll(<span class="string">"option"</span>);</div><div class="line">                select.onchange = <span class="function"><span class="title">function</span></span>()&#123;</div><div class="line">                    var arr=this.value.split(<span class="string">"/"</span>);</div><div class="line">                    ajax(arr[0]-1);</div><div class="line">                &#125;</div><div class="line">                $(<span class="string">"#prev"</span>).on(<span class="string">"click"</span>,<span class="function"><span class="title">function</span></span>()&#123;</div><div class="line">                    <span class="keyword">if</span>(toggle&gt;0)&#123;</div><div class="line">                        toggle--;</div><div class="line">                    &#125;;</div><div class="line">                    ajax(toggle);</div><div class="line">                &#125;)</div><div class="line">                $(<span class="string">"#next"</span>).on(<span class="string">"click"</span>,<span class="function"><span class="title">function</span></span>()&#123;</div><div class="line">                    <span class="keyword">if</span>(toggle&lt;totalPage)&#123;</div><div class="line">                        toggle++;</div><div class="line">                        ajax(toggle);</div><div class="line">                    &#125;                       </div><div class="line">                &#125;)</div><div class="line">            &#125;,</div><div class="line">            error:<span class="function"><span class="title">function</span></span>()&#123;</div><div class="line">                alert(<span class="string">"出错了!"</span>);</div><div class="line">            &#125;</div><div class="line">        &#125;);</div><div class="line">    &#125;</div><div class="line">    ajax(toggle);</div><div class="line"></div><div class="line">    </div><div class="line">    </div><div class="line">    </div><div class="line">&#125;)();</div></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/06/25/AjaxXHR-js/" data-id="cj4clxgge000030r3i01lno3k" class="article-share-link">Share</a>
       
       
     </footer>
@@ -123,7 +160,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/06/25/again-test/" data-id="cj4cl2yv10001ewr3zjkumfro" class="article-share-link">Partager</a>
+      <a data-url="http://yoursite.com/2017/06/25/again-test/" data-id="cj4clxgge000130r3c1aw8vw5" class="article-share-link">Share</a>
       
       
     </footer>
@@ -190,7 +227,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/06/25/myBlog/" data-id="cj4cl2yv70003ewr3ijblx8rm" class="article-share-link">Partager</a>
+      <a data-url="http://yoursite.com/2017/06/25/myBlog/" data-id="cj4clxgge000330r3c1vk76ea" class="article-share-link">Share</a>
       
       
     </footer>
@@ -235,7 +272,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/06/25/hello-world/" data-id="cj4cl2yv40002ewr3xlukholp" class="article-share-link">Partager</a>
+      <a data-url="http://yoursite.com/2017/06/25/hello-world/" data-id="cj4clxggu000430r3r9i4lz7x" class="article-share-link">Share</a>
       
       
     </footer>
@@ -270,12 +307,16 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Articles récents</h3>
+    <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
         
           <li>
-            <a href="/2017/06/25/AjaxXHR-js/">AjaxXHR js</a>
+            <a href="/2017/06/25/extend-tool/">extend tool</a>
+          </li>
+        
+          <li>
+            <a href="/2017/06/25/AjaxXHR-js/">again test</a>
           </li>
         
           <li>
@@ -303,7 +344,7 @@
   <div class="outer">
     <div id="footer-info" class="inner">
       &copy; 2017 John Doe<br>
-      Propulsé by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
 </footer>
